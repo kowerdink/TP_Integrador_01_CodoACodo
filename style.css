@@ -66,7 +66,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .inicio p, h1, button{
@@ -107,7 +107,7 @@ header {
 .inicio div button:hover {
     cursor: pointer;
     background-color: rgb(0, 100, 176);
-    border: none;
+    
 }
 .inicio div button:nth-child(2):hover {
     cursor: pointer;
@@ -164,7 +164,7 @@ header {
     padding: 1rem;
     border: 1.5px solid grey;
     border-radius: 5px;
-    opacity: 0.8;
+    opacity: 0.9;
     position: relative;
 }
 
@@ -252,6 +252,10 @@ header {
     border: 1px solid white;
     outline: none;
     border-radius: 4px;
+    transition: background-color ease 0.3s ;
+}
+.lugar div > button:hover {
+    background-color: rgb(0, 100, 176);
 }
 
 .formulario_orador {
@@ -259,6 +263,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 1rem;
 }
 
 .titulos_formularios {
@@ -270,36 +275,86 @@ header {
 }
 .titulos_formularios p:nth-child(1) {
     text-transform: uppercase;
+    font-size: 0.9rem;
 }
 .titulos_formularios h4 {
     text-transform: uppercase;
     padding-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+}
+.titulos_formularios p {
+    opacity: 0.7;
 }
 .titulos_formularios p > span {
     text-decoration: underline;
     text-decoration-style: dotted;
 }
 
-.form {
+.formulario {
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
-.form form {
+.formulario form {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+.formulario form > div {
+    display: flex;
+    width: 43%;
     flex-direction: column;
-    align-items: center;
+   
+}
+.formulario form > div > div {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
-.form form > div {
-    display: flex;
-    
-    gap: 1rem;
+.formulario form > div > div > input {
+    padding: 0.5rem;
+    width: 48%;
+    border-radius: 4px;
+    outline: none;
+    border: solid rgb(46, 46, 46) 1px;
+    opacity: 0.4;
+    font-size: 1rem;
 }
-.form form > div > input {
-    padding: 0.7rem;
+.formulario form > div > textarea {
+    height: 150px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: solid rgb(46, 46, 46) 1px;
+    outline: none;
+    resize: none;
+    opacity: 0.5;
 }
+.formulario form > div > textarea::placeholder {
+    font-size: 1.8rem;
+    z-index: 1;
+}
+.formulario form > div > p {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    opacity: 0.4;
+}
+.formulario form > div > button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(149, 198, 50);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ------------------------ FOOTER ----------------------*/
 
 footer {
     display: flex;
@@ -323,3 +378,5 @@ footer ul li {
     font-weight: 600;
     line-height: 1.6
 }
+
+/* ------------------------------------------------------*/

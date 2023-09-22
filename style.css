@@ -23,6 +23,7 @@ header {
 }
 .header img {
     width: 25%;
+    cursor: pointer;
 }
 .header ul {
     display: flex;
@@ -40,7 +41,7 @@ header {
     color: rgb(0, 255, 217);
 }
 
-.mainContent, main {
+.mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +207,7 @@ header {
     z-index: 1;
 }
 
-/* Comun Classes */
+/* Comun Classes ----------*/
 
 #BtnRed {
     background-color: red;
@@ -216,4 +217,109 @@ header {
 #BtnGrey {
     background-color: rgb(122, 122, 122);
     color: white;
+}
+
+/* --------------------- */
+
+.lugar {
+    display: flex;
+    width: 100%;
+}
+.lugar img {
+    width: 50%;
+}
+.lugar div {
+    width: 50%;
+    padding: 1.1rem;
+    background-color: rgb(53, 55, 60);
+    color: white;
+}
+.lugar div > h4 {
+    font-size: 1.5rem;
+}
+.lugar div > p {
+    margin-top: 0.6rem;
+    font-family: sans-serif;
+    
+    line-height: 2;
+    font-size: 13px;
+}
+.lugar div > button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 4px;
+}
+
+.formulario_orador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulos_formularios {
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.titulos_formularios p:nth-child(1) {
+    text-transform: uppercase;
+}
+.titulos_formularios h4 {
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    font-size: 2.5rem;
+}
+.titulos_formularios p > span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.form form > div {
+    display: flex;
+    
+    gap: 1rem;
+}
+.form form > div > input {
+    padding: 0.7rem;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+footer ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    gap: 4.2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 55, 74);
+    padding: 2rem;
+}
+footer ul li {
+    color:white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.6
 }

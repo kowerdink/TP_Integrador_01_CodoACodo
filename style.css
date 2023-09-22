@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(89, 96, 103);
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.header p {
+    font-size: 1.5rem;
+}
+.header img {
+    width: 25%;
+}
+.header ul {
+    display: flex;
+    gap: 1rem;
+}
+.header ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.header ul li:last-child{
+    color: rgb(6, 233, 135);
+}
+.header ul li:hover {
+    color: rgb(0, 255, 217);
+}
+
+.mainContent, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/img/ba1.jpg);
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    padding: 5rem;
+    position: relative;
+}
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+.inicio p, h1, button{
+    align-self: flex-end;
+    text-align: end;
+    vertical-align: middle;
+    z-index: 1;
+}
+.inicio p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.inicio h1 {
+    font-size: 2.2rem;
+}
+.inicio div {
+    display: flex;
+    align-self: flex-end;
+    gap: 1rem;
+}
+.inicio div button {
+    align-self: flex-end;
+    border: solid white 0.5px;
+    padding: 0.7rem 1.2rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: white;
+    transition:  background-color ease 0.3s;
+}
+.inicio div button:nth-child(2){
+    background-color: rgb(56, 144, 59);
+    border: none;
+}
+.inicio div button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 100, 176);
+    border: none;
+}
+.inicio div button:nth-child(2):hover {
+    cursor: pointer;
+    background-color: rgb(0, 176, 24);
+}
+
+.oradores {
+    display: flex;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:  Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.titulos p {
+    font-size: 1.1rem;
+}
+.titulos h3 {
+    font-size: 2.7rem;
+}
+
+.mainCards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+.cards_Oradores {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+}
+.card img {
+    width: 100%;
+    border-radius: 3px;
+}
+.card div {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    opacity: 0.8;
+    position: relative;
+}
+
+.card div > div {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    opacity: 1;
+}
+
+.card div > p {
+    line-height: 1.6;
+    font-size: 1rem;  
+    margin-top: 2rem;
+}
+
+.card div > div > p {
+    z-index: 1;
+    background-color: rgb(250, 201, 4);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+.card div > div > p:nth-child(2){
+    background-color: rgb(24, 88, 166);
+    color: white;
+    z-index: 1;
+}
+
+.card div h4 {
+    font-size: 1.3rem;
+    margin: 0.1rem 0;
+    z-index: 1;
+}
+
+/* Comun Classes */
+
+#BtnRed {
+    background-color: red;
+    color: white;
+}
+
+#BtnGrey {
+    background-color: rgb(122, 122, 122);
+    color: white;
+}

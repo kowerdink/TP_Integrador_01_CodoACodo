@@ -338,7 +338,7 @@ header {
     border-radius: 4px;
     outline: none;
     border: solid rgb(46, 46, 46) 1px;
-    opacity: 0.4;
+    opacity: 0.6;
     font-size: 1rem;
 }
 .formulario form > div > textarea {
@@ -349,7 +349,7 @@ header {
     border: solid rgb(46, 46, 46) 1px;
     outline: none;
     resize: none;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .formulario form > div > textarea::placeholder {
     font-size: 1.8rem;
@@ -358,7 +358,7 @@ header {
 .formulario form > div > p {
     margin-top: 0.5rem;
     font-size: 14px;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 .formulario form > div > button {
     width: 100%;
@@ -401,7 +401,12 @@ footer ul li {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    line-height: 1.6
+    line-height: 1.6;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+}
+footer ul li:hover {
+    color: rgb(2, 227, 227);
 }
 
 /* ------------------------------------------------------*/

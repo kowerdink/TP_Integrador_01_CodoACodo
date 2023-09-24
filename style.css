@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     padding: 1rem;
     color: white;
-    background-color: rgb(89, 96, 103);
+    background-color: rgb(49, 54, 60);
 }
 .header {
     display: flex;
@@ -42,15 +42,21 @@ header {
 .header ul li:hover {
     color: rgb(0, 255, 217);
 }
+.header ul li a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /* ------------------------ Inicio - Home ----------------------*/
 
-.mainContent {
+.mainContent, main {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+
 
 .inicio {
     display: flex;
@@ -192,7 +198,7 @@ header {
 .card div > p {
     line-height: 1.6;
     font-size: 1rem;  
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .card div > div > p {
@@ -410,3 +416,139 @@ footer ul li:hover {
 }
 
 /* ------------------------------------------------------*/
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ---------------- Responsive -------------------*/
+
+
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    
+    nav {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.1rem;
+        width: 100%;
+        background-color: rgb(56, 57, 65);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transition: right 0.3s ease;
+    }
+   
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img {
+        width: 70%;
+    }
+    .header p {
+        font-size: 2rem;
+    }
+
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header ul li {
+        font-size: 0.9rem;
+    }
+    .inicio {
+        padding: 1.5rem;
+        height: 50vh;
+        background-size: cover;
+        background-position: left center;
+    }
+
+    .inicio h1 {
+        font-size: 1.9rem;
+    }
+
+    .inicio p {
+        font-size: 0.9rem;
+    }
+    .inicio div button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .titulos p {
+        font-size: 0.9rem;
+    }
+    .titulos h3 {
+        font-size: 1.9rem;
+    }
+
+    .mainCards {
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+
+    .lugar {
+        flex-direction: column;
+    }
+    .lugar img  {
+        width: 100%;
+    }
+    .lugar div {
+        width: 100%;
+    }
+    .lugar div > h4 {
+        font-size: 1.1rem;
+    }
+
+    .lugar div > p {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .lugar div > button {
+        padding: 0.6rem;
+    }
+
+    .formulario form > div > textarea::placeholder {
+        font-size: 1.1rem;
+    }
+
+    .formulario form > div {
+        width: 75%;
+    }
+
+    .formulario form > div > p {
+        font-size: 0.7rem;
+    }
+
+    .titulos_formularios p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+    footer ul li {
+        font-size: 1.15rem;
+        cursor: pointer;
+    }
+}

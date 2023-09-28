@@ -415,17 +415,45 @@ footer ul li:hover {
     color: rgb(2, 227, 227);
 }
 
-/* ------------------------------------------------------*/
+/* ------------------ Icon for Responcive ------------------------*/
 
+.flex {
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+
+/* Hamburguesa hidden */
 .menu-icon {
     font-size: 30px;
+    padding: 10px;
     cursor: pointer;
     display: none;
     z-index: 2;
 }
 
-.flex {
+.menu-toggle {
+    display: none;
+    z-index: 2;
+}
+
+/* Muestra el Menu:  on click */
+.menu-toggle:checked ~ nav {
     display: flex;
+
+}
+/* Cruz icon hidden */
+#label2 {
+    display: none;
+}
+/* Oculta el icon Hamburguesa */
+.menu-toggle:checked ~ #label{
+    opacity: 0;
+}
+/* Muestra el Icono de cruz de cerrar */
+.menu-toggle:checked ~ #label2{
+    display: block;
 }
 
 /* ---------------- Responsive -------------------*/
@@ -451,7 +479,7 @@ footer ul li:hover {
         z-index: 1;
         transition: right 0.3s ease;
     }
-   
+    
     
     .header {
         flex-direction: column;
